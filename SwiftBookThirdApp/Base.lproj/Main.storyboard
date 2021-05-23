@@ -53,16 +53,25 @@
                                         <rect key="frame" x="148" y="224" width="200" height="31"/>
                                         <color key="minimumTrackTintColor" systemColor="systemGreenColor"/>
                                         <color key="maximumTrackTintColor" systemColor="placeholderTextColor"/>
+                                        <connections>
+                                            <action selector="rgbSliders:" destination="BYZ-38-t0r" eventType="valueChanged" id="epC-eu-13C"/>
+                                        </connections>
                                     </slider>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="7q3-QE-ZmN">
                                         <rect key="frame" x="148" y="276" width="200" height="31"/>
                                         <color key="minimumTrackTintColor" systemColor="systemGreenColor"/>
                                         <color key="maximumTrackTintColor" systemColor="placeholderTextColor"/>
+                                        <connections>
+                                            <action selector="rgbSliders:" destination="BYZ-38-t0r" eventType="valueChanged" id="Van-7x-h4o"/>
+                                        </connections>
                                     </slider>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="EYS-1v-x1h">
                                         <rect key="frame" x="148" y="326" width="200" height="31"/>
                                         <color key="minimumTrackTintColor" systemColor="systemGreenColor"/>
                                         <color key="maximumTrackTintColor" systemColor="placeholderTextColor"/>
+                                        <connections>
+                                            <action selector="rgbSliders:" destination="BYZ-38-t0r" eventType="valueChanged" id="j2U-9E-Vaw"/>
+                                        </connections>
                                     </slider>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
@@ -99,6 +108,12 @@
                             <constraint firstItem="N2D-sq-X0T" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="sDC-Iq-lKE"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="blueSlider" destination="EYS-1v-x1h" id="HoR-e3-KIW"/>
+                        <outlet property="colorView" destination="h9i-va-mBX" id="dlR-Yk-5Ck"/>
+                        <outlet property="greenSlider" destination="7q3-QE-ZmN" id="wqn-Nh-MSd"/>
+                        <outlet property="redSlider" destination="Isi-36-2BV" id="iGT-YT-tJU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
